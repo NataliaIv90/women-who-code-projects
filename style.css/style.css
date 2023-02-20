@@ -8,6 +8,8 @@
   text-align: center;
   color: rgb(2, 2, 179);
   text-transform: uppercase;
+  border-bottom: 3px solid rgb(233, 214, 1);
+  padding-bottom: 15px;
 }
 
 .projects {
