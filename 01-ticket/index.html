@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Ticket WHC project</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <form class="form__body">
+        <div class="form__row">
+          <label for="form__inpArticle">Article</label>
+          <input type="text" class="form__inp" id="form__inpArticle">
+        </div>
+        <div class="form__row">
+          <label for="form__inpAmount">Amount</label>
+          <input type="text" class="form__inp" id="form__inpAmount">
+        </div>
+        <div class="form__btnWrapper">
+          <button type="submit" class="form__calcBtn" id="form__calcBtn">Calculate Total</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="receipt">
+      <div>
+        <h1 class="receipt__title">
+          ======== Your receipt ========
+        </h1>
+        <div />
+
+        <div class="receipt__content">
+          <div class="receipt__item">
+            <div class="receipt__article">Apples</div>
+            <div>$<span class="receipt__amount">3</span></div>
+          </div>
+          <div class="receipt__item">
+            <div class="receipt__article">Oranges</div>
+            <div>$<span class="receipt__amount">2</span></div>
+          </div>
+        </div>
+
+        <div class="receipt__footer">
+          TOTAL $<span id="receipt__total">5</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
