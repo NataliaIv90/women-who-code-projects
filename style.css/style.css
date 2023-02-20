@@ -29,12 +29,14 @@
 
 .projects__item:hover {
   box-shadow: -15px -15px rgb(233, 214, 1);
-  font-weight: 700;
-
 }
 
-.projects__item:hover a {
+.projects__item:hover .projects__link {
   color: rgb(2, 2, 179);
+}
+
+.projects__item:hover .projects__link--yellow {
+  color: rgb(233, 214, 1);
 }
 
 .projects__img {
@@ -55,10 +57,10 @@
   font-size: 16px;
   text-decoration: none;
   color: black;
+  transition: all 150ms;
 }
 
 .projects__link:hover {
   text-decoration: underline;
   cursor: pointer;
-
 }
