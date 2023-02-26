@@ -1,5 +1,6 @@
 :root {
   --main-color: #39888d;
+  --main-color-light: #4cb4bc;
   --secondary-color-light: #f0a7a5;
   --secondary-color-dark: #d95c59;
 }
@@ -37,15 +38,20 @@ body {
   background-color: var(--secondary-color-light);
   color: white;
   transition: all 0.3s;
-  box-shadow: 5px 5px var(--main-color);
+  box-shadow: 5px 5px var(--main-color-light);
 }
 
 .drum__item:hover {
   color: var(--secondary-color-dark);
   background-color: white;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: 5px 5px var(--main-color-light);
   text-shadow: none;
+  box-shadow: 5px 5px var(--main-color);
+}
+
+.drum__item:active {
+  box-shadow: none;
 }
 
 .drum__key {
